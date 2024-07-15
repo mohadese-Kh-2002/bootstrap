@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/plugin/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/resposive.css">
+</head>
+
+<body>
+    <header class="header d-flex flex-column gap-5">
+        <img src="./images/logo.png" alt="logo" class="logo">
+        <nav class="nav d-flex align-items-center justify-content-between bg-primary ">
+            <ul class="menu d-flex align-items-center ">
+                <li class="menu__item"><a href="#"
+                        class="menu__link text-light link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold fs-2">link
+                        1</a></li>
+                <li class="menu__item"><a href="#"
+                        class="menu__link text-light link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold fs-2">link
+                        2</a></li>
+                <li class="menu__item"><a href="#"
+                        class="menu__link text-light link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold fs-2">link
+                        3</a></li>
+            </ul>
+            <form class="header__form d-none d-lg-flex align-items-center gap-5">
+                <input type="text" class="header__form-input rounded-3 px-2 py-3 border-info ps-4" placeholder="Search">
+                <button type="submit"
+                    class="header__form-submit btn btn-secondary btn-lg px-4 fs-4 py-3">search</button>
+            </form>
+        </nav>
+    </header>
+    <main class="main mt-5">
+        <form class="header__form d-flex align-items-center gap-3 d-md-none justify-content-center mb-5">
+            <input type="text" class="header__form-input rounded-3 px-2 py-3 border-primary border-3 ps-4"
+                placeholder="Search">
+            <button type="submit" class="header__form-submit btn btn-primary btn-lg px-4 fs-4 py-3">search</button>
+        </form>
+        <div class="wrapper-content overflow-hidden rounded-4">
+            <div class="content d-flex flex-column gap-4 overflow-hidden rounded-4 p-5">
+                <img src="./images/H.jpg" alt="logo" class="content-img">
+                <div class="content__text d-flex flex-column gap-4 ">
+                    <span>In der Schornau 25 A44892 Bochum</span>
+                    <span>Telefon: 0234 640 55 877</span>
+                    <span>Telefax: 0234 640 55 879</span>
+                    <span>Telefax: 0234 640 55 879</span>
+                    <span>E-Mail: info@radiochirurgie-rub.de</span>
+                </div>
+                <button
+                    class="content-btn btn bg-transparent rounded-2 d-flex justify-content-center align-content-center">See
+                    Profile</button>
+            </div>
+        </div>
+        <div class="content__info bg-primary d-flex flex-column gap-3 my-5 align-items-center text-light ">
+            <h3 class="content__info-title fw-bold fs-1 text-center lh-sm">Die Radiochirurgie - Hirntumore behandeln:
+            </h3>
+            <p class="content__info-text text-center lh-lg fw-medium fs-3">Die Behandlung von Hirntumoren
+                (Neuroonkologie) stellt eine
+                interdisziplinäre
+                und technische Herausforderung dar. Im Gamma Knife Zentrum Bochum wird dazu eine spezielle Form der
+                Strahlentherapie eingesetzt: Die Radiochirurgie. Das Gamma Knife Zentrum Bochum ist auf die Behandlung
+                von Hirntumoren (Neuroonkologie) spezialisiert. Die Behandlung erfordert die Zusammenarbeit der
+                medizinischen Fachrichtungen Neuroonkologie / Strahlentherapie / Neuroradiologie / Neurochirurgie.</p>
+            <button class="btn btn-secondary p-3 fs-3">
+                <div class="spinner-border me-1" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                Loading...
+            </button>
+        </div>
+        <div class="wrapper-doctors d-flex justify-content-center align-items-center gap-5 flex-wrap">
+            <div class="doctor rounded-3  d-flex flex-column overflow-hidden p-3 border border-1 border-primary gap-3">
+                <img src="./images/doctor1.jpg" alt="doctor" class="rounded-3">
+                <h2 class="name-doctor text-center fs-2 fw-bold">John Doe</h2>
+                <p class="desc-doctor text-center">Some example text</p>
+                <button class="btn btn-primary fs-3 fw-medium">See Profile</button>
+            </div>
+            <div class="doctor rounded-3 d-flex flex-column overflow-hidden p-3 border border-1 border-primary gap-3">
+                <img src="./images/doctor1.jpg" alt="doctor" class="rounded-3">
+                <h2 class="name-doctor text-center fs-2 fw-bold">John Doe</h2>
+                <p class="desc-doctor text-center">Some example text</p>
+                <button class="btn btn-primary fs-3 fw-medium">See Profile</button>
+            </div>
+            <div class="doctor rounded-3 d-flex flex-column overflow-hidden p-3 border border-1 border-primary gap-3">
+                <img src="./images/doctor1.jpg" alt="doctor" class="rounded-3">
+                <h2 class="name-doctor text-center fs-2 fw-bold">John Doe</h2>
+                <p class="desc-doctor text-center">Some example text</p>
+                <button class="btn btn-primary fs-3 fw-medium">See Profile</button>
+            </div>
+        </div>
+    </main>
+    <footer
+        class="footer mt-5 d-flex flex-column gap-3 align-items-center  border-top border-3 border-primary text-primary">
+        <h3 class="footer__tilte text-center lh-sm fw-bold fs-1">Mehr Erfolg durch enge Vernetzung:</h3>
+        <p class="footer__desc text-center lh-lg fw-medium fs-3">Die Ärzte des Gamma Knife Zentrums Bochum arbeiten eng
+            mit den Fachkollegen der Universitätskliniken für
+            Neurologie und Neurochirurgie, des Instituts für Radiologie, Neuroradiologie und Nuklearmedizin und des
+            Onkologischen Zentrums des Knappschaftskrankenhauses Bochum sowie der Klinik für Strahlentherapie und
+            Radioonkologie des Marien Hospitals Herne / Universitätsklinikum der Ruhr-Universität Bochum zusammen.</p>
+    </footer>
+    <script src="./scripts/plugin/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
